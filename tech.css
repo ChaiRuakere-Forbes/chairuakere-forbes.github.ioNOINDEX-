@@ -1,0 +1,23 @@
+.black-div {
+    background-color: black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .primary-image {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  .primary-image:hover {
+    content: url(path_to_secondary_image.jpg);
+    cursor: pointer;
+  }
+  
+  .back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  

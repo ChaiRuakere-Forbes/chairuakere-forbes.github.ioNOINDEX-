@@ -1,0 +1,31 @@
+body {
+  background-image: url("imgs/Artboard\ 1.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.image {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+

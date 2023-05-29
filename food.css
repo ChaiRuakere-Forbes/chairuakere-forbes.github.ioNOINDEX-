@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header-text {
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.black-div {
+  background-color: black;
+  height: 20px;
+}
+
+.white-div {
+  background-color: white;
+  height: 1000px;
+}
+
+.grey-div {
+  background-color: grey;
+  height: 100px;
+}
+
+.black-div:first-child {
+  height: 200px;
+}
+
+.primary-image {
+  width: auto;
+  height: 90px;
+  margin-right: 10px;
+}
+.header-text {
+  background-color: black;
+  font-size: 50px; 
+  line-height: 20px; 
+}

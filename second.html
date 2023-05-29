@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Second Page</title>
+  <link rel="stylesheet" type="text/css" href="second.css">
+  <script src="second.js"></script>
+  <style>
+    /* Your existing CSS styles here */
+
+    /* Animation */
+    .center-image {
+      animation: breathing 4s ease-in-out infinite;
+    }
+
+    @keyframes breathing {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="imgs/globe_eye.png" alt="Image" class="header-image">
+    <h1 class="header-text">WELCOME TO THE NEW WORLD ORDER</h1>
+    <a href="open.html" class="logout-button">LOG OUT</a>
+  </div>
+  <div class="line-div"></div>
+  <div class="red-div">
+    <div class="centered-content">
+      <img src="imgs/bioko_logo.png" alt="Center Image" class="center-image">
+      <div class="word-container">
+        <a href="food.html" class="word button">FOOD</a>
+        <a href="media.html" class="word button">MEDIA</a>
+        <a href="tech.html" class="word button">TECH</a>
+      </div>
+    </div>
+  </div>
+  <div class="line-div"></div>
+  <div class="white-div">
+    <div class="about-section">
+      <div class="about-image">
+        <img src="imgs/group_photo.gif" alt="About Image">
+      </div>
+      <div class="about-content">
+        <h2 class="about-header"><b>ABOUT US</b></h2>
+        <p class="about-paragraph">Our Company was founded on September 2nd, 1943, by a group of innovators and freethinkers from around the globe. With a shared vision to revolutionize the industry, these pioneers set out to challenge conventional norms and push the boundaries of what was deemed possible. Fuelled by their collective passion for innovation, they embarked on a journey that would shape the future of our organization and leave an indelible mark on the world. Through unwavering dedication and a relentless pursuit of excellence, our founders laid the foundation for a company that thrives on groundbreaking ideas, embraces diversity, and remains at the forefront of technological advancements. Today, their legacy continues to inspire us as we forge ahead, committed to delivering transformative solutions that impact lives and shape a better future for generations to come.</p>
+        <p class="about-paragraph">Over the years, our Company has grown exponentially, expanding its reach and influence across industries and continents. With each passing decade, we have faced numerous challenges and embraced countless opportunities for growth. Our commitment to innovation and adaptability has been instrumental in navigating the ever-changing business landscape. Through strategic partnerships, cutting-edge research and development, and a deep understanding of evolving customer needs, we have remained agile and resilient.</p>
+      </div>
+    </div>
+    <div class="about-section">
+      <div class="about-header-container">
+        <h1 class="about-header"><b>HOW TO JOIN</b></h1>
+        <p class="about-paragraph">Welcome to "HOW TO JOIN," your ultimate resource for unlocking the secrets to success and influence. As an esteemed platform run by the World Economic Forum in collaboration with a network of accomplished individuals, we offer exclusive insights into the pathways that lead to greatness. Drawing inspiration from historical legacies, including the revered traditions of organizations like the Freemasons, our mission is to empower individuals with knowledge that transcends conventional boundaries.</p>
+        <p class="about-paragraph">Delve into the hidden realms of power and discover the subtle nuances that shape our world. Through our meticulously curated content, we provide a glimpse into legendary gatherings, fostering a deeper understanding of influential networks such as the discreet Bohemian Grove. By navigating our comprehensive resources, you can uncover the tools, strategies, and connections necessary to embark on your own extraordinary journey.</p>
+        <p class="about-paragraph">Join us on this transformative odyssey as we explore the intricate web that connects global leaders and visionaries. Step into a realm where ambition meets opportunity, and where the pursuit of excellence knows no limits. Unlock the secrets of success and become a part of a community dedicated to making a profound impact on the world. Embrace the unknown, embrace the possibilities, and embark on a path that leads to the pinnacle of human achievement. Welcome to "HOW TO JOIN," your gateway to unlocking your true potential.</p>
+        <div class="under-paragraph-image">
+          <img src="imgs/under_paragraph.png" alt="Under Paragraph Image">
+        </div>
+      </div>      
+      <div class="second-image">
+        <img src="imgs/all_over_the_earth.png" alt="Second Image">
+      </div>
+    </div>    
+    <div class="line-div"></div>
+    <div class="grey-div" style="height: 200px;">
+      <div class="complaint-box">
+        <input type="text" id="complaint-input" class="complaint-textbox" placeholder="Type your complaint here">
+        <button type="button" id="submit-button" class="submit-button">Submit</button>
+        <p id="submit-status" class="submit-status"></p>
+      </div>      
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var submitButton = document.getElementById("submit-button");
+      var submitStatus = document.getElementById("submit-status");
+      var complaintInput = document.getElementById("complaint-input");
+    
+      submitButton.addEventListener("click", function() {
+        var complaint = complaintInput.value.trim();
+    
+        if (complaint !== "") {
+          submitStatus.textContent = "Submitted";
+          submitStatus.classList.add("submitted");
+    
+          // Clear input after 2 seconds
+          setTimeout(function() {
+            submitStatus.textContent = "";
+            submitStatus.classList.remove("submitted");
+            complaintInput.value = "";
+          }, 2000);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
